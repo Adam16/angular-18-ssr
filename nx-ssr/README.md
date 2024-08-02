@@ -1,18 +1,17 @@
 # NX-SSR
 
-Angular 17 Universal Server Side Rendering with Nx
+Angular 18 Universal Server Side Rendering with Nx
 
 ## Engine
 
 - node 20.9.x
 - npm 8.1.x
-- Angular 17
-- Nx 13.0.x
-- Nestjs 9.0.x
+- Angular 18
+- nextjs x.x
 
 ## Infrastructure
 
-- Angular 17 SSR with express
+- Angular 18 SSR with express server
 - Nginx as reverse proxy
 - Nginx serve static files from angular browser folder
 - Nestjs for API (mock data)
