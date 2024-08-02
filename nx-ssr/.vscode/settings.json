@@ -1,0 +1,17 @@
+{
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "files.exclude": {
+    "**/.DS_Store": true,
+    "**/.git": true,
+    "**/node_modules": true,
+    ".{dev,shadowenv.d}": true,
+    "{build,dist}/": false
+  },
+  "search.exclude": {
+    "**/node_modules": true,
+    ".{dev,shadowenv.d}": true,
+    "{build,dist}/": true
+  },
+  "cSpell.words": []
+}
