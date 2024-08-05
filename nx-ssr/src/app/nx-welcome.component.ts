@@ -1,10 +1,11 @@
 import { Component, ViewEncapsulation } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { NxFooterComponent } from './nx-footer.component';
 
 @Component({
   selector: 'app-nx-welcome',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, NxFooterComponent],
   template: `
     <!--
      * * * * * * * * * * * * * * * * * * * * * * * * * * * *
@@ -16,9 +17,20 @@ import { CommonModule } from '@angular/common';
     <style>
       html {
         -webkit-text-size-adjust: 100%;
-        font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
-          'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif,
-          'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
+        font-family:
+          ui-sans-serif,
+          system-ui,
+          -apple-system,
+          BlinkMacSystemFont,
+          'Segoe UI',
+          Roboto,
+          'Helvetica Neue',
+          Arial,
+          'Noto Sans',
+          sans-serif,
+          'Apple Color Emoji',
+          'Segoe UI Emoji',
+          'Segoe UI Symbol',
           'Noto Color Emoji';
         line-height: 1.5;
         tab-size: 4;
@@ -74,7 +86,10 @@ import { CommonModule } from '@angular/common';
         padding: 0.5rem 0.75rem;
       }
       .shadow {
-        box-shadow: 0 0 #0000, 0 0 #0000, 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+        box-shadow:
+          0 0 #0000,
+          0 0 #0000,
+          0 10px 15px -3px rgba(0, 0, 0, 0.1),
           0 4px 6px -2px rgba(0, 0, 0, 0.05);
       }
       .rounded {
@@ -182,8 +197,17 @@ import { CommonModule } from '@angular/common';
         display: flex;
         margin-top: 1rem;
         padding: 1rem;
-        transition-property: background-color, border-color, color, fill, stroke,
-          opacity, box-shadow, transform, filter, backdrop-filter,
+        transition-property:
+          background-color,
+          border-color,
+          color,
+          fill,
+          stroke,
+          opacity,
+          box-shadow,
+          transform,
+          filter,
+          backdrop-filter,
           -webkit-backdrop-filter;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         transition-duration: 150ms;
@@ -192,8 +216,17 @@ import { CommonModule } from '@angular/common';
       .list-item-link svg:first-child {
         margin-right: 1rem;
         height: 1.5rem;
-        transition-property: background-color, border-color, color, fill, stroke,
-          opacity, box-shadow, transform, filter, backdrop-filter,
+        transition-property:
+          background-color,
+          border-color,
+          color,
+          fill,
+          stroke,
+          opacity,
+          box-shadow,
+          transform,
+          filter,
+          backdrop-filter,
           -webkit-backdrop-filter;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         transition-duration: 150ms;
@@ -202,8 +235,17 @@ import { CommonModule } from '@angular/common';
       .list-item-link > span {
         flex-grow: 1;
         font-weight: 400;
-        transition-property: background-color, border-color, color, fill, stroke,
-          opacity, box-shadow, transform, filter, backdrop-filter,
+        transition-property:
+          background-color,
+          border-color,
+          color,
+          fill,
+          stroke,
+          opacity,
+          box-shadow,
+          transform,
+          filter,
+          backdrop-filter,
           -webkit-backdrop-filter;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         transition-duration: 150ms;
@@ -215,8 +257,17 @@ import { CommonModule } from '@angular/common';
         font-size: 0.75rem;
         font-weight: 300;
         line-height: 1rem;
-        transition-property: background-color, border-color, color, fill, stroke,
-          opacity, box-shadow, transform, filter, backdrop-filter,
+        transition-property:
+          background-color,
+          border-color,
+          color,
+          fill,
+          stroke,
+          opacity,
+          box-shadow,
+          transform,
+          filter,
+          backdrop-filter,
           -webkit-backdrop-filter;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         transition-duration: 150ms;
@@ -246,16 +297,34 @@ import { CommonModule } from '@angular/common';
         padding: 1.5rem 2rem;
         margin-bottom: 2rem;
         transition-duration: 300ms;
-        transition-property: background-color, border-color, color, fill, stroke,
-          opacity, box-shadow, transform, filter, backdrop-filter,
+        transition-property:
+          background-color,
+          border-color,
+          color,
+          fill,
+          stroke,
+          opacity,
+          box-shadow,
+          transform,
+          filter,
+          backdrop-filter,
           -webkit-backdrop-filter;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         align-items: center;
         display: flex;
       }
       .button-pill svg {
-        transition-property: background-color, border-color, color, fill, stroke,
-          opacity, box-shadow, transform, filter, backdrop-filter,
+        transition-property:
+          background-color,
+          border-color,
+          color,
+          fill,
+          stroke,
+          opacity,
+          box-shadow,
+          transform,
+          filter,
+          backdrop-filter,
           -webkit-backdrop-filter;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         transition-duration: 150ms;
@@ -385,8 +454,17 @@ import { CommonModule } from '@angular/common';
         font-weight: 400;
         padding: 0.5rem;
         cursor: pointer;
-        transition-property: background-color, border-color, color, fill, stroke,
-          opacity, box-shadow, transform, filter, backdrop-filter,
+        transition-property:
+          background-color,
+          border-color,
+          color,
+          fill,
+          stroke,
+          opacity,
+          box-shadow,
+          transform,
+          filter,
+          backdrop-filter,
           -webkit-backdrop-filter;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         transition-duration: 150ms;
@@ -882,22 +960,7 @@ nx affected:test
 nx affected:e2e</pre>
           </details>
         </div>
-        <p id="love">
-          Carefully crafted with
-          <svg
-            fill="currentColor"
-            stroke="none"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
-            />
-          </svg>
-        </p>
+        <app-nx-footer></app-nx-footer>
       </div>
     </div>
   `,

@@ -34,7 +34,9 @@ export function app(): Application {
     legacyHeaders: false, // Disable the `X-RateLimit-*` headers.
   });
 
-  const commonEngine = new CommonEngine();
+  const commonEngine = new CommonEngine({
+    enablePerformanceProfiler: true,
+  });
 
   // App behind a reverse proxy
   useSecurityMiddleware(ssrApp);
@@ -54,7 +56,7 @@ export function app(): Application {
     '*.*',
     express.static(browserDistFolder, {
       maxAge: '1y',
-    })
+    }),
   );
 
   // All regular routes use the Angular engine
